@@ -163,9 +163,4 @@ public void e_clickMenu() {
     System.out.println("Running: e_clickMenu");
 }
 
-@Override
-public void e_NewEdge() {
-    System.out.println("Running: e_NewEdge");
-}
 
-}

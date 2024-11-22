@@ -24,42 +24,42 @@ public class SeleniumTestStart {
     @Test
     public void testingEmptyCart() {
         StartPage basePage = new StartPage(this.driver);
-        basePage.clickShoppingBagLink();
+        basePage.e_clickShoppingBagLink();
         assertTrue(basePage.isShoppingBagEmpty());
     }
 
     @Test
     public void testingThroughBasicScenario() {
         StartPage basePage = new StartPage(this.driver);
-        basePage.clickOpenENHETPlanner();
-        basePage.clickStartFromScratch();
-        basePage.clickWallCabinets();
-        basePage.clickFirstElement();
-        basePage.clickCloseButton();
-        basePage.clickFinalizeButton();
-        basePage.clickAddToBagButton();
-        basePage.clickGoToShoppingBagButton();
-        basePage.clickKitchenConfiguratorLink();
+        basePage.e_clickOpenENHETPlanner();
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickWallCabinets();
+        basePage.e_clickFirstElement();
+        basePage.e_clickCloseButton();
+        basePage.e_clickFinalizeButton();
+        basePage.e_clickAddToBagButton();
+        basePage.e_clickGoToShoppingBagButton();
+        basePage.e_clickKitchenConfiguratorLink();
     }
     
     @Test
     public void testingImportingFromMenu() {
         StartPage basePage = new StartPage(this.driver);
-        basePage.clickOpenENHETPlanner();
-        basePage.clickStartFromScratch();
+        basePage.e_clickOpenENHETPlanner();
+        basePage.e_clickStartFromScratch();
         
-        basePage.clickMenuButton();
-        basePage.clickMenuCloseButton();
-        basePage.clickMenuButton();
-        basePage.clickOpenInMenuButton();
-        basePage.enterDesignCode(exampleCode);
-        basePage.clickOpenButtonWithCode();
-        basePage.clickOpenDesignButton();
+        basePage.e_clickMenuButton();
+        basePage.e_clickMenuCloseButton();
+        basePage.e_clickMenuButton();
+        basePage.e_clickOpenInMenuButton();
+        basePage.e_enterDesignCode(exampleCode);
+        basePage.e_clickOpenButtonWithCode();
+        basePage.e_clickOpenDesignButton();
 
-        basePage.clickFinalizeButton();
-        basePage.clickAddToBagButton();
-        basePage.clickGoToShoppingBagButton();
-        basePage.clickKitchenConfiguratorLink();
+        basePage.e_clickFinalizeButton();
+        basePage.e_clickAddToBagButton();
+        basePage.e_clickGoToShoppingBagButton();
+        basePage.e_clickKitchenConfiguratorLink();
     }
 
     @After

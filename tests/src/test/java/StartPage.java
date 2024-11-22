@@ -21,7 +21,7 @@ public class StartPage extends BasePage {
     private final By v_openDesignButtonLocator = By.xpath("//span[text()='Open design']]");
 
 
-    private final By v_shoppingBagEmptyLocator = By.xpath("//h1[text()='Your shopping bag is empty']");
+    private final By shoppingBagEmptyLocator = By.xpath("//h1[text()='Your shopping bag is empty']");
     private final By v_shoppingBagLinkLocator = By.xpath("//a[@aria-label[contains(., 'Shopping bag')]]");
 
 
@@ -38,83 +38,83 @@ public class StartPage extends BasePage {
     }
 
     public void e_clickOpenENHETPlanner() {
-        WebElement openENHETPlannerButton = waitForVisibilityAndReturn(openENHETPlannerLocator);
+        WebElement openENHETPlannerButton = waitForVisibilityAndReturn(v_openENHETPlannerLocator);
         openENHETPlannerButton.click();
     }
 
     public void e_clickStartFromScratch() {
-        WebElement startFromScratchButton = waitForVisibilityAndReturn(startFromScratchLocator);
+        WebElement startFromScratchButton = waitForVisibilityAndReturn(v_startFromScratchLocator);
         startFromScratchButton.click();
     }
 
     public void e_clickWallCabinets() {
-        WebElement wallCabinetsElement = waitForVisibilityAndReturn(wallCabinetsLocator);
+        WebElement wallCabinetsElement = waitForVisibilityAndReturn(v_wallCabinetsLocator);
         wallCabinetsElement.click();
     }
 
     public void e_clickFirstElement() {
-        WebElement firstElement = waitForVisibilityAndReturn(firstElementLocator);
+        WebElement firstElement = waitForVisibilityAndReturn(v_firstElementLocator);
         firstElement.click();
     }
 
     public void e_clickCloseButton() {
-        WebElement closeButton = waitForVisibilityAndReturn(closeButtonLocator);
+        WebElement closeButton = waitForVisibilityAndReturn(v_closeButtonLocator);
         closeButton.click();
     }
 
     public void e_clickFinalizeButton() {
-        WebElement finalizeButton = waitForVisibilityAndReturn(finalizeButtonLocator);
+        WebElement finalizeButton = waitForVisibilityAndReturn(v_finalizeButtonLocator);
         finalizeButton.click();
     }
 
     public void e_clickAddToBagButton() {
-        WebElement addToBagButton = waitForVisibilityAndReturn(addToBagButtonLocator);
+        WebElement addToBagButton = waitForVisibilityAndReturn(v_addToBagButtonLocator);
         addToBagButton.click();
     }
 
     public void e_clickGoToShoppingBagButton() {
-        WebElement goToShoppingBagButton = waitForVisibilityAndReturn(goToShoppingBagButtonLocator);
+        WebElement goToShoppingBagButton = waitForVisibilityAndReturn(v_goToShoppingBagButtonLocator);
         goToShoppingBagButton.click();
     }
 
     public void e_clickKitchenConfiguratorLink() {
-        WebElement kitchenConfiguratorLink = waitForVisibilityAndReturn(kitchenConfiguratorLinkLocator);
+        WebElement kitchenConfiguratorLink = waitForVisibilityAndReturn(v_kitchenConfiguratorLinkLocator);
         kitchenConfiguratorLink.click();
     }
 
     public void e_clickMenuButton() {
-        WebElement menuButton = waitForVisibilityAndReturn(menuButtonLocator);
+        WebElement menuButton = waitForVisibilityAndReturn(v_menuButtonLocator);
         menuButton.click();
     }
 
     public void e_clickMenuCloseButton() {
-        WebElement menuCloseButton = waitForVisibilityAndReturn(menuCloseButtonLocator);
+        WebElement menuCloseButton = waitForVisibilityAndReturn(v_menuCloseButtonLocator);
         menuCloseButton.click();
     }
 
     public void e_clickOpenInMenuButton() {
-        WebElement openButton = waitForVisibilityAndReturn(openButtonLocator);
+        WebElement openButton = waitForVisibilityAndReturn(v_openButtonLocator);
         openButton.click();
     }
     public void e_enterDesignCode(String code) {
-        WebElement designCodeInput = waitForVisibilityAndReturn(designCodeInputLocator);
+        WebElement designCodeInput = waitForVisibilityAndReturn(v_designCodeInputLocator);
         designCodeInput.clear();
         designCodeInput.sendKeys(code);
     }
     public void e_clickOpenButtonWithCode() {
-        WebElement openButton = waitForVisibilityAndReturn(openButtonLocatorWithCode);
+        WebElement openButton = waitForVisibilityAndReturn(v_openButtonLocatorWithCode);
         openButton.click();
     }
     public void e_clickOpenDesignButton() {
-        WebElement openDesignButton = waitForVisibilityAndReturn(openDesignButtonLocator);
+        WebElement openDesignButton = waitForVisibilityAndReturn(v_openDesignButtonLocator);
         openDesignButton.click();
     }
-    public boolean e_isShoppingBagEmpty() {
+    public boolean isShoppingBagEmpty() {
         WebElement shoppingBagEmptyMessage = waitForVisibilityAndReturn(shoppingBagEmptyLocator);
         return shoppingBagEmptyMessage.isDisplayed();
     }
     public void e_clickShoppingBagLink() {
-        WebElement shoppingBagLink = waitForVisibilityAndReturn(shoppingBagLinkLocator);
+        WebElement shoppingBagLink = waitForVisibilityAndReturn(v_shoppingBagLinkLocator);
         shoppingBagLink.click();
     }
 }
