@@ -24,7 +24,8 @@ public class SeleniumTestStart {
     @Test
     public void testingEmptyCart() {
         StartPage basePage = new StartPage(this.driver);
-       
+        basePage.clickShoppingBagLink();
+        assertTrue(basePage.isShoppingBagEmpty());
     }
 
     @Test

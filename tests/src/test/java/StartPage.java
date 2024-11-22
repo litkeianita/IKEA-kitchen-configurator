@@ -21,6 +21,9 @@ public class StartPage extends BasePage {
     private final By openDesignButtonLocator = By.xpath("//span[text()='Open design']]");
 
 
+    private final By shoppingBagEmptyLocator = By.xpath("//h1[text()='Your shopping bag is empty']");
+    private final By shoppingBagLinkLocator = By.xpath("//a[@aria-label[contains(., 'Shopping bag')]]");
+
 
 
 
@@ -106,6 +109,12 @@ public class StartPage extends BasePage {
         WebElement openDesignButton = waitForVisibilityAndReturn(openDesignButtonLocator);
         openDesignButton.click();
     }
-
-
+    public boolean isShoppingBagEmpty() {
+        WebElement shoppingBagEmptyMessage = waitForVisibilityAndReturn(shoppingBagEmptyLocator);
+        return shoppingBagEmptyMessage.isDisplayed();
+    }
+    public void clickShoppingBagLink() {
+        WebElement shoppingBagLink = waitForVisibilityAndReturn(shoppingBagLinkLocator);
+        shoppingBagLink.click();
+    }
 }
