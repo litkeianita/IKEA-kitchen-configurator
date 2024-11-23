@@ -1,4 +1,4 @@
-e_clickPreDefinedENHET
+e_clickStartFromScratch
 e_clickMenu
 e_clickOpen
 e_writeCodeAndClickOpen

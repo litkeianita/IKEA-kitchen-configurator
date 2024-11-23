@@ -1,5 +1,5 @@
 v_ENHETPlanner
-e_clickPreDefinedENHET
+e_clickStartFromScratch
 v_PreDefinedENHET
 e_clickMenu
 v_Menu
