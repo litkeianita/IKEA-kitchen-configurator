@@ -25,8 +25,6 @@ public class StartPage extends BasePage {
     private final By v_shoppingBagLinkLocator = By.xpath("//a[@aria-label[contains(., 'Shopping bag')]]");
 
 
-
-
     public StartPage(WebDriver driver) {
         super(driver);
         this.driver.get("https://www.ikea.com/at/en/planners/");
