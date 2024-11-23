@@ -89,7 +89,7 @@ public class StartPage extends BasePage {
         finalizeButton.click();
         e_clickAddToShoppingBag();
     }
-    public void e_clickEditDesignButton() {
+    public void e_clickEditDesign() {
         WebElement editDesignButton = waitForVisibilityAndReturn(v_editDesignButtonLocator);
         editDesignButton.click();
     }
