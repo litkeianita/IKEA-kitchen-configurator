@@ -137,10 +137,6 @@ public class StartPage extends BasePage {
         WebElement openDesignButton = waitForVisibilityAndReturn(v_openDesignButtonLocator);
         openDesignButton.click();
     }
-    public boolean isShoppingBagEmpty() {
-        WebElement shoppingBagEmptyMessage = waitForVisibilityAndReturn(shoppingBagEmptyLocator);
-        return shoppingBagEmptyMessage.isDisplayed();
-    }
     public void e_clickShoppingBagLink() {
         WebElement shoppingBagLink = waitForVisibilityAndReturn(v_shoppingBagLinkLocator);
         shoppingBagLink.click();
