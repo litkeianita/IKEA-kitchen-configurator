@@ -22,8 +22,10 @@ public class SeleniumTestStart {
     }
 
     @Test
-    public void testingRandomPathVertexVoverage100(){
+    public void testingRandomPathEdgeCoverage100(){
+        
         StartPage basePage = new StartPage(this.driver);
+        
         basePage.e_clickOpenENHETPlanner();
         basePage.e_clickStartFromScratch();
         basePage.e_clickMenu();
@@ -32,31 +34,26 @@ public class SeleniumTestStart {
         basePage.e_clickAddProduct();
         basePage.e_clickFinalise();
         basePage.e_clickGoToShoppingBag();
-        //basePage.e_clickShowIncludedParts();
+        basePage.e_clickShowIncludedParts();
         //basePage.e_clickRemoveDesing();
-        //basePage.e_clickViewDesingInPlanner();
-        //basePage.e_clickX();
-        //basePage.e_clickExitPlanner();
-
-        basePage = new StartPage(this.driver);
-
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickMenu();
+        basePage.e_clickExitPlanner();
         basePage.e_clickStartFromScratch();
         basePage.e_clickStyleKitchen();
         basePage.e_clickOnAProductType();
         //basePage.e_clickOnDifferentStyle();
         basePage.e_clickOnItem();
-        basePage.e_clickEditDesign();
-        //basePage.e_clickPreDefinedENHET();
         basePage.e_clickMenu();
         basePage.e_clickOpen();
         basePage.e_clickX();
         basePage.e_clickExitPlanner();
-        //basePage.e_clickPreDefinedENHET();
-        //basePage.e_clickFinalise();
+        basePage.e_clickPreDefinedENHET(exampleCode2);
+        basePage.e_clickFinalise();
         basePage.e_clickEditDesign();
-        //basePage.e_clickFinalise();
+        basePage.e_clickFinalise();
         basePage.e_clickGoToShoppingBag();
-        //basePage.e_clickShowIncludedParts();
+        basePage.e_clickShowIncludedParts();
         //basePage.e_clickRemoveDesing();
         //basePage.e_clickShowIncludedParts();
         //basePage.e_clickRemoveDesing();
@@ -67,9 +64,9 @@ public class SeleniumTestStart {
         basePage.e_clickX();
         basePage.e_clickStartFromScratch();
         basePage.e_clickX();
-        //basePage.e_clickStartFromScratch();
-        //basePage.e_clickAddProduct();
-        //basePage.e_clickStyleKitchen();
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickAddProduct();
+        basePage.e_clickStyleKitchen();
         basePage.e_clickFinalise();
         basePage.e_clickGoToShoppingBag();
         //basePage.e_clickShowIncludedParts();
@@ -99,13 +96,13 @@ public class SeleniumTestStart {
         basePage.e_clickFinalise();
         basePage.e_clickEditDesign();
         basePage.e_clickGoToShoppingBag();
-        //basePage.e_clickShowIncludedParts();
+        basePage.e_clickShowIncludedParts();
         basePage.e_clickViewDesingInPlanner();
         basePage.e_clickStyleKitchen();
         basePage.e_clickAddProduct();
         basePage.e_clickFinalise();
         basePage.e_clickGoToShoppingBag();
-        //basePage.e_clickShowIncludedParts();
+        basePage.e_clickShowIncludedParts();
         basePage.e_clickViewDesingInPlanner();
         basePage.e_clickStyleKitchen();
         //basePage.e_clickOnDifferentStyle();
@@ -142,6 +139,152 @@ public class SeleniumTestStart {
         basePage.e_clickStyleKitchen();
         basePage.e_clickAddProduct();
         basePage.e_clickOnAProductType();
+    }
+    
+    @Test
+    public void testingRandomPathEdgeCoverage50(){
+
+        StartPage basePage = new StartPage(this.driver);
+
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickMenu();
+        basePage.e_clickOpen();
+        basePage.e_clickX();
+        basePage.e_clickExitPlanner();
+        basePage.e_clickAddProduct();
+        basePage.e_clickStyleKitchen();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickOnAProductType();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickPreDefinedENHET(exampleCode2);
+        //basePage.e_clickOnDifferentStyle();
+        //basePage.e_clickRemoveDesing();
+        basePage.e_clickOnItem();
+    }
+
+    @Test
+    public void testingWeightedRandomPathEdgeCoverage100(){
+
+        StartPage basePage = new StartPage(this.driver);
+
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickMenu();
+        basePage.e_clickOpen();
+        basePage.e_clickX();
+        basePage.e_clickOpen();
+        basePage.e_clickX();
+        basePage.e_clickExitPlanner();
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickMenu();
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickAddProduct();
+        basePage.e_clickStyleKitchen();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickAddProduct();
+        basePage.e_clickOnAProductType();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickFinalise();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickMenu();
+        basePage.e_clickOpen();
+        basePage.e_clickX();
+        basePage.e_clickExitPlanner();
+        basePage.e_clickPreDefinedENHET(exampleCode2);
+        basePage.e_clickStyleKitchen();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickFinalise();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickAddProduct();
+        basePage.e_clickStyleKitchen();
+        basePage.e_clickAddProduct();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickAddProduct();
+        basePage.e_clickFinalise();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickStyleKitchen();
+        //basePage.e_clickOnDifferentStyle();
+        basePage.e_clickAddProduct();
+        basePage.e_clickOnAProductType();
+        basePage.e_clickFinalise();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickShowIncludedParts();
+        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickShowIncludedParts();
+        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickShowIncludedParts();
+        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickShowIncludedParts();
+        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickFinalise();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickShowIncludedParts();
+        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickMenu();
+        basePage.e_clickOpen();
+        basePage.e_writeCodeAndClickOpen(exampleCode);
+        basePage.e_clickAddProduct();
+        basePage.e_clickOnAProductType();
+        basePage.e_clickOnItem();
+        basePage.e_clickOnItem();
+        basePage.e_clickFinalise();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickFinalise();
+        basePage.e_clickGoToShoppingBag();
+        basePage.e_clickShowIncludedParts();
+        basePage.e_clickViewDesingInPlanner();
+        basePage.e_clickAddProduct();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+    }
+    @Test
+    public void testingWeightedRandomPathEdgeCoverage50(){
+
+        StartPage basePage = new StartPage(this.driver);
+
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickMenu();
+        basePage.e_clickExitPlanner();
+        basePage.e_clickStartFromScratch();
+        basePage.e_clickAddProduct();
+        basePage.e_clickStyleKitchen();
+        basePage.e_clickAddProduct();
+        basePage.e_clickStyleKitchen();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickOnAProductType();
+        basePage.e_clickOnAProductType();
+        basePage.e_clickFinalise();
+        basePage.e_clickEditDesign();
+        basePage.e_clickMenu();
+        basePage.e_clickExitPlanner();
+        basePage.e_clickPreDefinedENHET(exampleCode2);
     }
     @After
     public void close() {
