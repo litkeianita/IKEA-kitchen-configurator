@@ -167,7 +167,8 @@ public class SeleniumTestStart {
             basePage.e_clickShowIncludedParts();
             basePage.e_clickViewDesingInPlanner();
             basePage.e_clickPreDefinedENHET(exampleCode2);
-            //basePage.e_clickOnDifferentStyle();//basePage.e_clickRemoveDesing();
+            //basePage.e_clickOnDifferentStyle();
+            // basePage.e_clickRemoveDesing();
             basePage.e_clickOnItem();
             successfulTests.add("testingRandomPathEdgeCoverage50");
         } catch (Exception e) {
@@ -316,16 +317,14 @@ public class SeleniumTestStart {
     }
     @AfterClass
     public static void printSuccessfulTests() {
-        System.out.println("Successful tests:");
         for (String testName : successfulTests) {
-            System.out.println("+ " + testName);
+            System.out.println("Successful:  " + testName);
         }
     }
     @AfterClass
     public static void printUnSuccessfulTests() {
-        System.out.println("Unsuccessful tests with error message:");
         for (String testName : unSuccessfulTests) {
-            System.out.println("- " + testName);
+            System.out.println("Unsuccessful tests with error message: " + testName);
         }
     }
 }
