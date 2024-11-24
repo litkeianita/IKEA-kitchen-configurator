@@ -35,7 +35,7 @@ public class StartPage extends BasePage {
     private final By v_viewDesignInPlannerLocator = By.xpath("//span[text()='View design in planner']");
     private final By v_showIncludedPartsLocator = By.xpath("//a[@class='cart-ingka-link' and text()='Show included parts']");
 
-    private final By openADesignButtonLocator = By.xpath("//span[@class='btn__label' and text()='Open a design']");
+    private final By openADesignButtonLocator = By.xpath("//span[@class='btn__label' and text()='Open a design']");}
 
     public StartPage(WebDriver driver) {
         super(driver);

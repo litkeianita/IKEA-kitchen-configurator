@@ -140,7 +140,6 @@ public class SeleniumTestStart {
         basePage.e_clickAddProduct();
         basePage.e_clickOnAProductType();
     }
-    
     @Test
     public void testingRandomPathEdgeCoverage50(){
 
@@ -160,16 +159,12 @@ public class SeleniumTestStart {
         basePage.e_clickShowIncludedParts();
         basePage.e_clickViewDesingInPlanner();
         basePage.e_clickPreDefinedENHET(exampleCode2);
-        //basePage.e_clickOnDifferentStyle();
-        //basePage.e_clickRemoveDesing();
+        //basePage.e_clickOnDifferentStyle();//basePage.e_clickRemoveDesing();
         basePage.e_clickOnItem();
     }
-
     @Test
     public void testingWeightedRandomPathEdgeCoverage100(){
-
         StartPage basePage = new StartPage(this.driver);
-
         basePage.e_clickStartFromScratch();
         basePage.e_clickMenu();
         basePage.e_clickOpen();
@@ -265,9 +260,7 @@ public class SeleniumTestStart {
     }
     @Test
     public void testingWeightedRandomPathEdgeCoverage50(){
-
         StartPage basePage = new StartPage(this.driver);
-
         basePage.e_clickStartFromScratch();
         basePage.e_clickMenu();
         basePage.e_clickExitPlanner();
