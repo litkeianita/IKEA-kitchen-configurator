@@ -25,30 +25,35 @@ public class StartPage extends BasePage {
     private final By leaveButtonLocator = By.xpath("//span[text()='Leave']");
 
     private final By v_openButtonLocator = By.xpath("//button[@id='openButtonClick' and text()='Open']");
-    private final By v_designCodeInputLocator = By.id("open-design-code-input-input");
+    private final By designCodeInputLocator = By.id("open-design-code-input-input");
     private final By v_openButtonLocatorWithCode = By.xpath("//skapa-140-2-2-button[text()='Open']");
     private final By v_openDesignButtonLocator = By.xpath("//span[text()='Open design']]");
 
 
     private final By shoppingBagEmptyLocator = By.xpath("//h1[text()='Your shopping bag is empty']");
     private final By v_shoppingBagLinkLocator = By.xpath("//a[@aria-label[contains(., 'Shopping bag')]]");
-    private final By v_kitchenConfiguratorLocator = By.xpath("//a[text()='Kitchen Configurator']");
+    private final By v_viewDesignInPlannerLocator = By.xpath("//span[text()='View design in planner']");
+    private final By v_showIncludedPartsLocator = By.xpath("//a[@class='cart-ingka-link' and text()='Show included parts']");
 
-
+    private final By openADesignButtonLocator = By.xpath("//span[@class='btn__label' and text()='Open a design']");
 
     public StartPage(WebDriver driver) {
         super(driver);
         this.driver.get("https://www.ikea.com/at/en/planners/");
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+
     }
 
     public StartPage(WebDriver driver, String url) {
         super(driver);
         this.driver.get(url);
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
     }
 
     public void e_clickOpenENHETPlanner() {
         WebElement openENHETPlannerButton = waitForVisibilityAndReturn(v_openENHETPlannerLocator);
         openENHETPlannerButton.click();
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
     }
 
     public void e_clickStartFromScratch() {
@@ -123,11 +128,9 @@ public class StartPage extends BasePage {
         openButton.click();
     }
     public void e_writeCodeAndClickOpen(String code) {
-        WebElement designCodeInput = waitForVisibilityAndReturn(v_designCodeInputLocator);
+        WebElement designCodeInput = waitForVisibilityAndReturn(designCodeInputLocator);
         designCodeInput.clear();
         designCodeInput.sendKeys(code);
-        e_clickOpenButtonWithCode();
-        e_clickOpenDesignButton();
     }
     public void e_clickOpenButtonWithCode() {
         WebElement openButton = waitForVisibilityAndReturn(v_openButtonLocatorWithCode);
@@ -152,8 +155,22 @@ public class StartPage extends BasePage {
     }
 
     public void e_clickViewDesingInPlanner() {
-        WebElement kitchenConfiguratorLink = waitForVisibilityAndReturn(v_kitchenConfiguratorLocator);
+        WebElement kitchenConfiguratorLink = waitForVisibilityAndReturn(v_viewDesignInPlannerLocator);
         kitchenConfiguratorLink.click();
     }
+    public void e_clickShowIncludedParts() {
+        WebElement showIncludedPartsButton = waitForVisibilityAndReturn(v_showIncludedPartsLocator);
+        showIncludedPartsButton.click();
+    }
+
+    public void e_clickPreDefinedENHET(String code) {
+        WebElement openADesignButton = waitForVisibilityAndReturn(openADesignButtonLocator);
+        openADesignButton.click();
+        WebElement designCodeInput = waitForVisibilityAndReturn(designCodeInputLocator);
+        designCodeInput.clear();
+        designCodeInput.sendKeys(code);
+        e_clickOpenButtonWithCode();
+    }
+
 
 }
