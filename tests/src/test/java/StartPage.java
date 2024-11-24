@@ -2,7 +2,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
 public class StartPage extends BasePage {
-
     private final By v_openENHETPlannerLocator = By.xpath("//a[contains(@class, 'pub__btn') and contains(@href, 'ikea.com/addon-app/coro3/planner')]");
     private final By v_startFromScratchLocator = By.xpath("//p[text()='Start from scratch'] or //button[text()='Start from scratch']");
     private final By v_addProductTabLocator = By.xpath("//button[text()='Add product']");
@@ -35,7 +34,7 @@ public class StartPage extends BasePage {
     private final By v_viewDesignInPlannerLocator = By.xpath("//span[text()='View design in planner']");
     private final By v_showIncludedPartsLocator = By.xpath("//a[@class='cart-ingka-link' and text()='Show included parts']");
 
-    private final By openADesignButtonLocator = By.xpath("//span[@class='btn__label' and text()='Open a design']");}
+    private final By openADesignButtonLocator = By.xpath("//span[@class='btn__label' and text()='Open a design']");
 
     public StartPage(WebDriver driver) {
         super(driver);
@@ -171,6 +170,4 @@ public class StartPage extends BasePage {
         designCodeInput.sendKeys(code);
         e_clickOpenButtonWithCode();
     }
-
-
 }
