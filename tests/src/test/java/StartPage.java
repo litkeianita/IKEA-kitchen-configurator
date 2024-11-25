@@ -36,15 +36,6 @@ public class StartPage extends BasePage {
 
     private final By openADesignButtonLocator = By.xpath("//span[@class='btn__label' and text()='Open a design']");
 
-    public static void randomSleep() throws InterruptedException {
-        Random random = new Random();
-        // Generate a random time between 5000 ms (5 seconds) and 30000 ms (30 seconds)
-        int sleepTime = 2000 + random.nextInt(5001); // 5000 + (0 to 25000)
-        //System.out.println("Sleeping for " + sleepTime / 1000 + " seconds...");
-        Thread.sleep(sleepTime);
-        //System.out.println("Woke up after " + sleepTime / 1000 + " seconds.");
-        //System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
-    }
     
     public StartPage(WebDriver driver) {
         super(driver);
