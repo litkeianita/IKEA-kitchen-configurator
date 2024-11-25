@@ -36,132 +36,148 @@ public class StartPage extends BasePage {
 
     private final By openADesignButtonLocator = By.xpath("//span[@class='btn__label' and text()='Open a design']");
 
-    
     public StartPage(WebDriver driver) {
         super(driver);
         this.driver.get("https://www.ikea.com/at/en/planners/");
         System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
     }
-
     public StartPage(WebDriver driver, String url) {
         super(driver);
         this.driver.get(url);
         System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
     }
-
     public void e_clickOpenENHETPlanner() {
         WebElement openENHETPlannerButton = waitForVisibilityAndReturn(v_openENHETPlannerLocator);
         openENHETPlannerButton.click();
         System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
     }
-
     public void e_clickStartFromScratch() {
         WebElement startFromScratchButton = waitForVisibilityAndReturn(v_startFromScratchLocator);
         startFromScratchButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickAddProduct() {
         WebElement addProductTab = waitForVisibilityAndReturn(v_addProductTabLocator);
         addProductTab.click();
         e_clickOnAProductType();
         e_clickOnItem();
         clickBackButton();
-
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickStyleKitchen() {
         WebElement styleKitchenTab = waitForVisibilityAndReturn(v_styleKitchenTabLocator);
         styleKitchenTab.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickOnAProductType() {
         WebElement wallCabinetsElement = waitForVisibilityAndReturn(v_wallCabinetsLocator);
         e_clickAddProduct();
         wallCabinetsElement.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickOnItem() {
         WebElement firstElement = waitForVisibilityAndReturn(v_firstElementLocator);
         firstElement.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void clickBackButton() {
         WebElement backButton = waitForVisibilityAndReturn(backButtonLocator);
         backButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickX() {
         WebElement closeButton = waitForVisibilityAndReturn(v_closeButtonLocator);
         closeButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickFinalise() {
         WebElement finalizeButton = waitForVisibilityAndReturn(v_finalizeButtonLocator);
         finalizeButton.click();
         e_clickAddToShoppingBag();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickEditDesign() {
         WebElement editDesignButton = waitForVisibilityAndReturn(v_editDesignButtonLocator);
         editDesignButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickAddToShoppingBag() {
         WebElement addToBagButton = waitForVisibilityAndReturn(v_addToBagButtonLocator);
         addToBagButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
 
     public void e_clickGoToShoppingBag() {
         WebElement goToShoppingBagButton = waitForVisibilityAndReturn(v_goToShoppingBagButtonLocator);
         goToShoppingBagButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
 
     public void e_clickKitchenConfiguratorLink() {
         WebElement kitchenConfiguratorLink = waitForVisibilityAndReturn(v_kitchenConfiguratorLinkLocator);
         kitchenConfiguratorLink.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
 
     public void e_clickMenu() {
         WebElement menuButton = waitForVisibilityAndReturn(v_menuButtonLocator);
         menuButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
 
     public void e_clickMenuCloseButton() {
         WebElement menuCloseButton = waitForVisibilityAndReturn(v_menuCloseButtonLocator);
         menuCloseButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
 
     public void e_clickOpen() {
         WebElement openButton = waitForVisibilityAndReturn(v_openButtonLocator);
         openButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_writeCodeAndClickOpen(String code) {
         WebElement designCodeInput = waitForVisibilityAndReturn(designCodeInputLocator);
         designCodeInput.clear();
         designCodeInput.sendKeys(code);
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickOpenButtonWithCode() {
         WebElement openButton = waitForVisibilityAndReturn(v_openButtonLocatorWithCode);
         openButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickOpenDesignButton() {
         WebElement openDesignButton = waitForVisibilityAndReturn(v_openDesignButtonLocator);
         openDesignButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickShoppingBagLink() {
         WebElement shoppingBagLink = waitForVisibilityAndReturn(v_shoppingBagLinkLocator);
         shoppingBagLink.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickExitPlanner() {
         WebElement exitPlannerButton = waitForVisibilityAndReturn(v_exitPlannerLocator);
         exitPlannerButton.click();
         clickLeaveButton();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void clickLeaveButton() {
         WebElement leaveButton = waitForVisibilityAndReturn(leaveButtonLocator);
         leaveButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
-
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickViewDesingInPlanner() {
         WebElement kitchenConfiguratorLink = waitForVisibilityAndReturn(v_viewDesignInPlannerLocator);
         kitchenConfiguratorLink.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickShowIncludedParts() {
         WebElement showIncludedPartsButton = waitForVisibilityAndReturn(v_showIncludedPartsLocator);
         showIncludedPartsButton.click();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
-
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
     public void e_clickPreDefinedENHET(String code) {
         WebElement openADesignButton = waitForVisibilityAndReturn(openADesignButtonLocator);
         openADesignButton.click();
@@ -169,5 +185,6 @@ public class StartPage extends BasePage {
         designCodeInput.clear();
         designCodeInput.sendKeys(code);
         e_clickOpenButtonWithCode();
-    System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());}
+        System.out.println("Running: " + Thread.currentThread().getStackTrace()[1].getMethodName());
+    }
 }
