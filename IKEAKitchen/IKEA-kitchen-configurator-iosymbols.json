@@ -1,0 +1,344 @@
+{
+    "models": [
+        {
+            "name": "IKEA-kitchen-configurator",
+            "id": "f621c389-c265-4cbc-8ebb-50a24b619fa5",
+            "startElementId": "75a2d67a-5a54-47b6-8f06-ac14ffed64c7",
+            "vertices": [
+                {
+                    "id": "7be0d1d4-a4c6-4384-bad3-8c94b1359f16",
+                    "name": "v_ShoppingCart",
+                    "properties": {
+                        "x": 1656.72367824503,
+                        "y": 242.070210435014
+                    }
+                },
+                {
+                    "id": "75a2d67a-5a54-47b6-8f06-ac14ffed64c7",
+                    "name": "v_ENHETPlanner",
+                    "properties": {
+                        "x": 284.93370688539428,
+                        "y": -216.91803760376008
+                    }
+                },
+                {
+                    "id": "958b7a29-da9f-421d-8fe3-06efab43faec",
+                    "name": "v_StartFromScratch",
+                    "properties": {
+                        "x": -273.9096002982648,
+                        "y": 230.04640518022365
+                    }
+                },
+                {
+                    "id": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "name": "v_PreDefinedENHET",
+                    "properties": {
+                        "x": 928.7453741734462,
+                        "y": 16.90658697487362
+                    }
+                },
+                {
+                    "id": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "name": "v_PlannerPageAddProductsMenu",
+                    "properties": {
+                        "x": 233.92948823264664,
+                        "y": 510.846019174711
+                    }
+                },
+                {
+                    "id": "069294c4-ef5e-44c3-969e-ca6e6eb40323",
+                    "name": "v_PlannerPageStyleKitchenMenu",
+                    "properties": {
+                        "x": 830.7815340541401,
+                        "y": 527.8475258364067
+                    }
+                },
+                {
+                    "id": "9a82d395-5604-47ec-8137-3cd266ca0e85",
+                    "name": "v_ProductTypeList",
+                    "properties": {
+                        "x": -246.0485145065975,
+                        "y": 965.7800273924444
+                    }
+                },
+                {
+                    "id": "2a1a5a96-37e1-468f-bcf6-8be1064f13c9",
+                    "name": "v_DesignSummary",
+                    "properties": {
+                        "x": 1412.7092142927523,
+                        "y": 907.773096748645
+                    }
+                },
+                {
+                    "id": "9f6e04d3-380c-4f53-be97-dd679d3078e2",
+                    "name": "v_ItemInShoppingBag",
+                    "properties": {
+                        "x": 1770.9249904943993,
+                        "y": 18.59371317265399
+                    }
+                },
+                {
+                    "id": "8df92db2-444b-45e3-9070-9c2cdb27319f",
+                    "name": "v_Menu",
+                    "properties": {
+                        "x": 411.99128360900786,
+                        "y": 195.33668136971105
+                    }
+                },
+                {
+                    "id": "45df3934-e774-4817-ac09-69cc39263ca0",
+                    "name": "v_OpenADesing",
+                    "properties": {
+                        "x": 194.86675151128885,
+                        "y": 399.0430869985228
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "5a1f75ea-4bc8-4741-8200-b05c578288a0",
+                    "name": "e_clickShowIncludedParts",
+                    "sourceVertexId": "7be0d1d4-a4c6-4384-bad3-8c94b1359f16",
+                    "targetVertexId": "9f6e04d3-380c-4f53-be97-dd679d3078e2",
+                    "input": "clickShowIncludedParts",
+                    "output": "opensItemDetails",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "f75963af-3e00-4e0d-81b9-728c27b889a6",
+                    "name": "e_clickStartFromScratch",
+                    "sourceVertexId": "75a2d67a-5a54-47b6-8f06-ac14ffed64c7",
+                    "targetVertexId": "958b7a29-da9f-421d-8fe3-06efab43faec",
+                    "input": "clickStartFromScratch",
+                    "output": "new",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "e6c4cb72-85b0-4860-aca0-850a224c9af5",
+                    "name": "e_clickPreDefinedENHET",
+                    "sourceVertexId": "75a2d67a-5a54-47b6-8f06-ac14ffed64c7",
+                    "targetVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "input": "clickPreDefinedENHET",
+                    "output": "opensPreDefinedPlanner",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "9cf461b0-96ae-4ea2-a09e-6158c1661d7d",
+                    "name": "e_clickAddProduct",
+                    "sourceVertexId": "958b7a29-da9f-421d-8fe3-06efab43faec",
+                    "targetVertexId": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "input": "clickAddProduct",
+                    "output": "productTypeSelection",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "46de6643-c73c-4720-9eda-ef3f7a547f1a",
+                    "name": "e_clickMenu2",
+                    "sourceVertexId": "958b7a29-da9f-421d-8fe3-06efab43faec",
+                    "targetVertexId": "8df92db2-444b-45e3-9070-9c2cdb27319f",
+                    "input": "clickMenu",
+                    "output": "openMenu",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "765900bc-3d1a-4737-9557-5c88e22cc85d",
+                    "name": "e_clickAddProduct",
+                    "sourceVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "targetVertexId": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "input": "clickAddProduct",
+                    "output": "productTypeSelection",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "cabeb557-0000-4aa5-8142-dc3289a6bb35",
+                    "name": "e_clickStyleKitchen",
+                    "sourceVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "targetVertexId": "069294c4-ef5e-44c3-969e-ca6e6eb40323",
+                    "input": "clickStyleKitchen",
+                    "output": "designSelection",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "8cdb5482-72a3-49c5-ac42-669400339850",
+                    "name": "e_clickFinalise4",
+                    "sourceVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "targetVertexId": "2a1a5a96-37e1-468f-bcf6-8be1064f13c9",
+                    "input": "clickFinalise",
+                    "output": "finalDesingSummary",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "c2de9390-a286-4a3a-b69e-3f75e231e787",
+                    "name": "e_clickMenu",
+                    "sourceVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "targetVertexId": "8df92db2-444b-45e3-9070-9c2cdb27319f",
+                    "input": "clickMenu",
+                    "output": "openMenu",
+                    "weight": "0.900000"
+                },
+                {
+                    "id": "54f2cd08-23f8-4435-a51c-50589d38d55d",
+                    "name": "e_clickOnAProductType",
+                    "sourceVertexId": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "targetVertexId": "9a82d395-5604-47ec-8137-3cd266ca0e85",
+                    "input": "clickOnAProductType",
+                    "output": "productSelection",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "eae7162e-634f-427f-9d3f-bf4b6cfa3451",
+                    "name": "e_clickFinalise",
+                    "sourceVertexId": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "targetVertexId": "2a1a5a96-37e1-468f-bcf6-8be1064f13c9",
+                    "input": "clickFinalise",
+                    "output": "finalDesingSummary",
+                    "weight": "0.200000"
+                },
+                {
+                    "id": "f6ef8eed-e1cb-480d-b8df-694e56229c1b",
+                    "name": "e_clickStyleKitchen",
+                    "sourceVertexId": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "targetVertexId": "069294c4-ef5e-44c3-969e-ca6e6eb40323",
+                    "input": "clickStyleKitchen",
+                    "output": "designSelection",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "be6d10d6-d718-4f92-b848-2299363433d6",
+                    "name": "e_clickFinalise2",
+                    "sourceVertexId": "069294c4-ef5e-44c3-969e-ca6e6eb40323",
+                    "targetVertexId": "2a1a5a96-37e1-468f-bcf6-8be1064f13c9",
+                    "input": "clickFinalise",
+                    "output": "finalDesingSummary",
+                    "weight": "0.700000"
+                },
+                {
+                    "id": "3c765d2f-b80b-43de-a257-24c95a9e418b",
+                    "name": "e_clickAddProduct",
+                    "sourceVertexId": "069294c4-ef5e-44c3-969e-ca6e6eb40323",
+                    "targetVertexId": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "input": "clickAddProduct",
+                    "output": "productTypeSelection",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "049fc39e-8ce6-4204-acf1-fb77e8b1925d",
+                    "name": "e_clickOnDifferentStyle",
+                    "sourceVertexId": "069294c4-ef5e-44c3-969e-ca6e6eb40323",
+                    "targetVertexId": "069294c4-ef5e-44c3-969e-ca6e6eb40323",
+                    "input": "clickOnDifferentStyle",
+                    "output": "designChanges",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "3f4c8ff8-0567-471e-8e61-bab01ef816ee",
+                    "name": "e_clickOnItem",
+                    "sourceVertexId": "9a82d395-5604-47ec-8137-3cd266ca0e85",
+                    "targetVertexId": "9a82d395-5604-47ec-8137-3cd266ca0e85",
+                    "input": "clickOnItem",
+                    "output": "newProductAdded",
+                    "weight": "0.700000"
+                },
+                {
+                    "id": "82344c24-ab79-425e-b3f0-d800bab95b98",
+                    "name": "e_clickBack",
+                    "sourceVertexId": "9a82d395-5604-47ec-8137-3cd266ca0e85",
+                    "targetVertexId": "4fa341ff-9558-472d-8551-d181b3356f53",
+                    "input": "clickBack",
+                    "output": "productTypeSelection",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "4838166c-6cd9-4bcc-809e-0dcaf2ce9d38",
+                    "name": "e_clickFinalise3",
+                    "sourceVertexId": "9a82d395-5604-47ec-8137-3cd266ca0e85",
+                    "targetVertexId": "2a1a5a96-37e1-468f-bcf6-8be1064f13c9",
+                    "input": "clickFinalise",
+                    "output": "finalDesingSummary",
+                    "weight": "0.300000"
+                },
+                {
+                    "id": "1a5ae7d5-bb1a-4894-a4e7-3941f0b90eb6",
+                    "name": "e_clickEditDesign",
+                    "sourceVertexId": "2a1a5a96-37e1-468f-bcf6-8be1064f13c9",
+                    "targetVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "input": "clickEditDesign",
+                    "output": "opensPreDefinedPlanner",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "fb4ce1df-5df0-41c4-9603-91c95c1d2bbb",
+                    "name": "e_clickGoToShoppingBag",
+                    "sourceVertexId": "2a1a5a96-37e1-468f-bcf6-8be1064f13c9",
+                    "targetVertexId": "7be0d1d4-a4c6-4384-bad3-8c94b1359f16",
+                    "input": "clickGoToShoppingBag",
+                    "output": "opensShoppingBag",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "e33a5e0a-df42-474e-ace4-2ef52b104e43",
+                    "name": "e_clickViewDesingInPlanner",
+                    "sourceVertexId": "9f6e04d3-380c-4f53-be97-dd679d3078e2",
+                    "targetVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "input": "clickViewDesingInPlanner",
+                    "output": "opensPreDefinedPlanner",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "e885bca0-7d57-4e68-911f-b20f94acfba8",
+                    "name": "e_clickRemoveDesing",
+                    "sourceVertexId": "9f6e04d3-380c-4f53-be97-dd679d3078e2",
+                    "targetVertexId": "7be0d1d4-a4c6-4384-bad3-8c94b1359f16",
+                    "input": "clickRemoveDesing",
+                    "output": "returnsShoppingBag",
+                    "weight": "0.500000"
+                },
+                {
+                    "id": "791766a9-df42-4728-b2cb-a4752b564de0",
+                    "name": "e_clickStartFromScratch",
+                    "sourceVertexId": "8df92db2-444b-45e3-9070-9c2cdb27319f",
+                    "targetVertexId": "958b7a29-da9f-421d-8fe3-06efab43faec",
+                    "input": "clickStartFromScratch",
+                    "output": "new",
+                    "weight": "0.100000"
+                },
+                {
+                    "id": "7f2e0e67-44ae-4544-940e-f546e76da347",
+                    "name": "e_clickExitPlanner",
+                    "sourceVertexId": "8df92db2-444b-45e3-9070-9c2cdb27319f",
+                    "targetVertexId": "75a2d67a-5a54-47b6-8f06-ac14ffed64c7",
+                    "input": "clickExitPlanner",
+                    "output": "mainPage",
+                    "weight": "0.200000"
+                },
+                {
+                    "id": "a3acfef6-1ad2-4e03-9c70-3921b69b05f0",
+                    "name": "e_clickOpen",
+                    "sourceVertexId": "8df92db2-444b-45e3-9070-9c2cdb27319f",
+                    "targetVertexId": "45df3934-e774-4817-ac09-69cc39263ca0",
+                    "input": "clickOpen",
+                    "output": "opensInputField",
+                    "weight": "0.200000"
+                },
+                {
+                    "id": "a08fa3fd-062e-4133-ae08-a14d963a1168",
+                    "name": "e_writeCodeAndClickOpen",
+                    "sourceVertexId": "45df3934-e774-4817-ac09-69cc39263ca0",
+                    "targetVertexId": "d6ef8008-3444-40aa-8780-29e1d7e956dc",
+                    "input": "writeCodeAndClickOpen",
+                    "output": "opensPreDefinedPlanner",
+                    "weight": "1.000000"
+                },
+                {
+                    "id": "d8219d46-af1a-425b-aeee-60c4baa31c94",
+                    "name": "e_clickX",
+                    "sourceVertexId": "45df3934-e774-4817-ac09-69cc39263ca0",
+                    "targetVertexId": "8df92db2-444b-45e3-9070-9c2cdb27319f",
+                    "input": "clickMenu",
+                    "output": "openMenu",
+                    "weight": "0.500000"
+                }
+            ]
+        }
+    ]
+}
